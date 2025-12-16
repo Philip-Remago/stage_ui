@@ -1,7 +1,7 @@
 name: stage_ui
 description: "Stage UI Package with widgets used to build stage"
 version: 0.0.1
-homepage: https://github.com/yourname/stage_ui
+homepage: https://github.com/Philip-Remago/stage_ui
 publish_to: "none"
 
 environment:
