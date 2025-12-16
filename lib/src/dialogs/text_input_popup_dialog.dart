@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:stage_ui/src/Inputs/text_input.dart';
+import 'package:stage_ui/src/inputs/text_input.dart';
 import 'package:stage_ui/src/dialogs/empty_popup_dialog.dart';
-
 
 class TextInputPopupDialog {
   static Future<String?> show(
@@ -59,7 +58,8 @@ class _TextInputDialogContent extends StatefulWidget {
   });
 
   @override
-  State<_TextInputDialogContent> createState() => _TextInputDialogContentState();
+  State<_TextInputDialogContent> createState() =>
+      _TextInputDialogContentState();
 }
 
 class _TextInputDialogContentState extends State<_TextInputDialogContent> {
@@ -129,7 +129,8 @@ class _TextInputDialogContentState extends State<_TextInputDialogContent> {
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  if (widget.title != null && widget.title!.trim().isNotEmpty) ...[
+                  if (widget.title != null &&
+                      widget.title!.trim().isNotEmpty) ...[
                     Text(widget.title!, style: theme.textTheme.titleMedium),
                     const SizedBox(height: 12),
                   ],
